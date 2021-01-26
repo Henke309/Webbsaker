@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url(https://media.wired.com/photos/5cdefb92b86e041493d389df/125:94/w_1265,h_951,c_limit/Culture-Grumpy-Cat-487386121.jpg);
+    background-size:cover;
+    background-position-y:1%;
+
+}
+
+
+.bild{
+    position: fixed;
+    align-items: center;
+    justify-items: center;
+    top: 50%;
+    left: 50%;
+    background:url(https://i.pinimg.com/originals/03/33/93/03339378992293f41ede19598fa0a547.jpg);
+    background-size: cover;
+    transform: translate(-50%, -50%);
+    border-radius: 1em;
+
+
+}
+
+.text{
+    background:rgba(255,255,255,0.5);
+    
+    padding: 1em;
+    border:4px solid black;
+    border-radius: 1em;
+}

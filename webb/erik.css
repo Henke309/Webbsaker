@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 1px solid black;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    display: inline-block;
+
+}
+
+img{
+    width: 5%;
+}
+
+.header{
+    width: fit-content;
+    display: inline-block;
+
+}
+
+h1{
+    font-size: 350%;
+}
+
+.mid{
+    padding-top: 5%;
+    width: 50%;
+}

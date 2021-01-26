@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h1{
+    padding-left: 0.5em;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background: rgba(0, 255, 255, 0.1);
+}
+
+.bigbox{
+    display: inline-block;
+    padding-bottom: 10%;
+    width:50%;
+}
+
+.box2{
+    position: relative;
+    width: 100%;
+}
+
+.box3{
+    width: 100%;
+}
+
+.bild{
+    display: inline-block;
+    margin: 1em auto 0 auto;
+    float:right ;
+}

@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image:url(https://i.pinimg.com/originals/4d/8e/cc/4d8ecc6967b4a3d475be5c4d881c4d9c.jpg);
+    background-color:#cccccc ;
+
+}
+
+.text{
+    position: relative ;
+    background:rgba(255, 255, 255, 0.5) ;
+    margin: 1em;
+    padding: 1em;
+    border:2px solid black; 
+    border-radius: 1em;
+    
+}

@@ -1,0 +1,60 @@
+body{
+    margin:0 ;
+    padding:0 ;
+    background: url(https://tocksforsshopping.se/globalassets/fellesgemensamt---webolavthon.no/-butikklogos/b/burger-king-logo.svg);
+    background-size: cover;
+
+    display: flex;
+}
+
+div{
+    border: 2px solid black;
+    border-radius: 1em;
+}
+
+.box1{
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    left: 10px;
+    width:200px ;
+    height:200px ;
+    background: url(https://i.pinimg.com/originals/1e/f6/fe/1ef6fe2f3e4b9871f19ca2cf99cd42bb.jpg);
+    background-size: cover;
+    margin-left:10px;
+    margin-right:10px; 
+}
+
+.box2{
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    right: 10px;
+    width:200px ;
+    height:200px ;
+    background: url(data:image/jpeg;base64,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);
+    margin-left:10px;
+    margin-right:10px; 
+
+}
+
+.box3{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background:url(https://www.burgerking.se/011_se/Product%20images/Burgers/image-thumb__19097__product_detail/BBQ_Bacon_King_Produktbilder%20Hemsida.png);
+    background-size: cover;
+    background-position-x: center;
+
+
+}

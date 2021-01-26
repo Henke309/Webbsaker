@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://img.pngio.com/bitchpng-bitch-png-762_360.png);
+    background-size: cover;
+}
+
+div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 20%;
+    height: 20%;
+}
+
+.box1{
+    left: 10%;
+    top: 10%;
+    background:rgba(255, 0, 0, 1);
+
+}
+
+.box2{
+    left: 30%;
+    top: 30%;
+    background:rgba(0, 255, 0, 1);
+
+}
+
+.box3{
+    left: 50%;
+    top: 50%;
+    background: rgba(0, 0, 255, 1);
+
+}
+
+.box4{
+    left: 70%;
+    top: 70%;
+    background:rgba(0, 255, 255, 1);
+}
