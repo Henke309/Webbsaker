@@ -9,7 +9,7 @@
 <body>
 <?php
     if(isset($_POST['txtField'])){
-        echo "<h1>".$_POST['txtField'].<"</h1>"; 
+        echo "<h1>".$_POST['txtField']."</h1>"; 
         if(isset($_GET['stuff'])) echo "<h2>".$_GET['stuff']."</h2>";
     }
 ?>
