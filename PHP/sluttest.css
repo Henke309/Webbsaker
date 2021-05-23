@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form {
+    width: 50%;
+    background: #666;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+input {
+    min-width: 70%;
+    max-width: calc(100% - 7.2rem);
+    padding: .5rem;
+    font-size: 2rem;
+}
+
+button {
+    width: 7rem;
+    padding: .5rem;
+    font-size: 2rem;
+    float: right;
+}
+
+.ruta {
+    width: 50%;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding: 2rem;
+    margin-top: 1rem;
+    background: #666;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 10px;
+    vertical-align:middle;
+}
+.showname{
+    padding: 1em;
+    min-width: 300px;
+    max-width: 50%;
+    overflow: hidden;
+    border:5px solid blue;
+    border-radius: 20px;
+    background: yellow;
+}
