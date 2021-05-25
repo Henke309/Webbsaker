@@ -44,24 +44,24 @@
         $result=mysqli_query($conn, $sql);
         $row=mysqli_fetch_assoc($result);
     ?>
-    <form method="post" action="ny.php">
+    <form method="post" action="slutp2.php">
         <input type="text" name="txtEditInput" id="txtEditInput" value="<?=$row['text'];?>" required autocomplete="off">
         <input type="hidden" name="TextID" value="<?=$row['TextID']?>">
         <button type="submit" name="btnEditSubmit" value=".">Ändra!</button>
     </form>
 <?php }else{ ?>    
-    <form method="post" action="ny.php">
+    <form method="post" action="slutp2.php">
         <input type="text" name="txtInput" id="txtInput" placeholder="Skriv vad du vill!" required autocomplete="off">
         <button type="submit" name="btnSubmit" value=".">Tryck!</button>
     </form>
 <?php } ?>    
     <div class="ruta">
     <?php 
-        //-------------------Get all data from table, and print it
+        //-------------------Get all data from table, and print its
         $sql="SELECT * FROM listtext";
         $result=mysqli_query($conn, $sql);
         while($row=mysqli_fetch_assoc($result)){
-            echo $row['text']."&nbsp;<a href='ny.php?del=".$row['TextID']."'>X</a><a href='ny.php?edit=".$row['TextID']."'>/</a><br>";
+            echo $row['text']."&nbsp;<a href='slutp2.php?del=".$row['TextID']."'>X</a><a href='slutp2.php?edit=".$row['TextID']."'>/</a><br>";
         }
         //--------------------------------------------------------
     ?>
