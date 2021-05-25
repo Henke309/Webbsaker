@@ -12,9 +12,9 @@
     //---take data from textbox and put it in database
     if(isset($_POST['btnSubmit'])){
         $txtText=$_POST['txtInput'];
-        $sql="INSERT INTO `listtext`(`text`) VALUES ('$txtText')";
+        $sql="INSERT INTO `listtext`(`Text`) VALUES ('$txtText')";
         $result=mysqli_query($conn, $sql);
-    }
+    } 
     //-----------------------------------------------
     
     if(isset($_GET['del'])){
@@ -26,7 +26,7 @@
     if(isset($_POST['btnEditSubmit'])){
         $editid=$_POST['TextID'];
         $texten=$_POST['txtEditInput'];
-        $sql="UPDATE `listtext` SET `text`='$texten' WHERE TextID=$editid";
+        $sql="UPDATE `listtext` SET `Text`='$texten' WHERE TextID=$editid";
         $result=mysqli_query($conn, $sql);
     }
 
@@ -35,7 +35,7 @@
 <head>
     <meta charset="UTF-8">
     <title>PHP-magic</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sluttest.css">
 </head>
 <body>
 <?php  if(isset($_GET['edit'])){ 
@@ -45,23 +45,27 @@
         $row=mysqli_fetch_assoc($result);
     ?>
     <form method="post" action="slutp2.php">
-        <input type="text" name="txtEditInput" id="txtEditInput" value="<?=$row['text'];?>" required autocomplete="off">
+        <input type="text" name="txtEditInput" id="txtEditInput" value="<?=$row['Text'];?>" required autocomplete="off">
         <input type="hidden" name="TextID" value="<?=$row['TextID']?>">
         <button type="submit" name="btnEditSubmit" value=".">Ändra!</button>
     </form>
 <?php }else{ ?>    
     <form method="post" action="slutp2.php">
-        <input type="text" name="txtInput" id="txtInput" placeholder="Skriv vad du vill!" required autocomplete="off">
-        <button type="submit" name="btnSubmit" value=".">Tryck!</button>
+        <input type="text" name="txtInput" id="txtInput" placeholder="Skriv in en vara!" required autocomplete="off">
+        <button type="submit" name="btnSubmit" value=".">Lägg till</button>
     </form>
 <?php } ?>    
     <div class="ruta">
+    <div class="rubrik">
+    <h1>Köplista</h1>
+    </div>
+    
     <?php 
         //-------------------Get all data from table, and print its
         $sql="SELECT * FROM listtext";
         $result=mysqli_query($conn, $sql);
         while($row=mysqli_fetch_assoc($result)){
-            echo $row['text']."&nbsp;<a href='slutp2.php?del=".$row['TextID']."'>X</a><a href='slutp2.php?edit=".$row['TextID']."'>/</a><br>";
+            echo $row['Text']."&nbsp;<a href='slutp2.php?del=".$row['TextID']."'>Ta bort!</a><a href='slutp2.php?edit=".$row['TextID']."'>Ändra</a><br>";
         }
         //--------------------------------------------------------
     ?>

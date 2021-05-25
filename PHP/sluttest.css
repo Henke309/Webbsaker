@@ -5,9 +5,8 @@
 }
 
 body {
-    background: #eef;
+    background: rgb(58, 58, 58);
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100vh;
@@ -26,26 +25,17 @@ input {
     max-width: calc(100% - 7.2rem);
     padding: .5rem;
     font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 button {
-    width: 7rem;
+    width: 10rem;
     padding: .5rem;
     font-size: 2rem;
     float: right;
-}
-
-.ruta {
-    width: 50%;
-    font-size: 2rem;
-    font-family: sans-serif;
-    padding: 2rem;
-    margin-top: 1rem;
-    background: #666;
-    border: 2px solid black;
-    border-radius: 20px;
-    color: white;
-
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 a {
@@ -67,4 +57,18 @@ a {
     border:5px solid blue;
     border-radius: 20px;
     background: yellow;
+}
+
+.ruta {
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 2rem;
+    margin-top: 1rem;
+    background: #666;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: white;
+
 }
